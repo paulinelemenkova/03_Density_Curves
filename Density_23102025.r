@@ -3,7 +3,7 @@ df <- read.csv("FAOSTAT_India_12.csv")
 #head(df)
 
 p2 <- ggplot(df, aes(Value, group=Item, fill=Item)) +
-    geom_density(adjust=2.5, alpha=.4) +
+    geom_density(adjust=2.5, alpha=.4, size=0.2) +
     labs(title = "Data density: agriculture products in India (2000-2023)", x = "Value, kg/ha", y = "Frequency") +
     theme(
         legend.position = c(.97, .97),
