@@ -1,5 +1,6 @@
 library(ggplot2)
-df <- read.csv("FAOSTAT_India_12.csv")
+
+df <- read_csv("FAOSTAT_India_12.csv")
 #head(df)
 
 p2 <- ggplot(df, aes(Value, group=Item, fill=Item)) +
